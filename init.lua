@@ -1,1 +1,1 @@
-require("neonyx")
+require('neonyx')
