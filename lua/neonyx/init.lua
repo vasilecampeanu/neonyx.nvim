@@ -11,3 +11,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require('neonyx.configs')
 require('lazy').setup('neonyx.plugins')
+
