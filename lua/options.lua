@@ -8,6 +8,11 @@ vim.opt.termguicolors   = true                        -- Enable highlight groups
 vim.opt.list            = false                       -- Do not display special characters
 vim.opt.listchars       = { tab = '» ', trail = '·', nbsp = '␣' }
 
+vim.cmd 'hi Comment    gui=none'
+vim.cmd 'hi Normal     ctermbg=NONE guibg=NONE'
+vim.cmd 'hi NonText    ctermbg=NONE guibg=NONE'
+vim.cmd 'hi SignColumn ctermbg=NONE guibg=NONE'
+
 -- Line Wrapping and Indentation
 vim.opt.wrap            = false                       -- Display lines as one long line
 vim.opt.linebreak       = true                        -- Don't split words when wrapping
