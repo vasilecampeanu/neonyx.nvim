@@ -4,6 +4,8 @@ return {
     branch = '0.1.x',
     dependencies = {
         'nvim-lua/plenary.nvim',
+
+        -- FZF sorter for telescope written in c
         { 
             -- If encountering errors, see telescope-fzf-native README for installation instructions
             'nvim-telescope/telescope-fzf-native.nvim',
@@ -17,6 +19,7 @@ return {
                 return vim.fn.executable 'make' == 1
             end,
         },
+
         { 'nvim-telescope/telescope-ui-select.nvim' },
 
         -- Useful for getting pretty icons, but requires a Nerd Font.
@@ -75,7 +78,7 @@ return {
         vim.keymap.set('n', '<leader>sr',       builtin.resume,      { desc = '[S]earch [R]esume' })
         vim.keymap.set('n', '<leader>s.',       builtin.oldfiles,    { desc = '[S]earch Recent Files ("." for repeat)' })
         vim.keymap.set('n', '<leader><leader>', builtin.buffers,     { desc = '[ ] Find existing buffers' })
-        
+
         -- It's also possible to pass additional configuration options.
         -- See `:help telescope.builtin.live_grep()` for information about particular keys
         -- NOTE: You need this package to be installed: `brew install ripgrep`

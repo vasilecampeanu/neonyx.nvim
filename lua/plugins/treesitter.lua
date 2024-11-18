@@ -1,10 +1,8 @@
--- See `:help nvim-treesitter`
-
 return {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    main = 'nvim-treesitter.configs',
-    opts = {
+    main  = 'nvim-treesitter.configs',
+    opts  = {
         ensure_installed = {
             'lua',
             'javascript',
@@ -18,6 +16,6 @@ return {
             'markdown_inline',
         },
         highlight = { enable = true },
-        indent = { enable = true },
+        indent    = { enable = true },
     }
 }

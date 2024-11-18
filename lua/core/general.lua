@@ -1,3 +1,5 @@
+-- General options that need to be enabled early 
+
 -- Set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

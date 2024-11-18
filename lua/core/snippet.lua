@@ -18,8 +18,7 @@ vim.diagnostic.config {
     underline = false,
     update_in_insert = true,
     float = {
-        -- Or "if_many"
-        source = 'always',
+        source = 'if_many',
     },
     -- Make diagnostic background transparent
     on_ready = function()
